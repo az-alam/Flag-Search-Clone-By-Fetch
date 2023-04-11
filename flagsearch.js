@@ -17,7 +17,7 @@ anchorbutton.onclick = ((e) => {
 
 function showflag(result) {
     const flagname = input.value;
-    const flagCapitalize = flagname.charAt(0).toUpperCase() + flagname.slice(1)
+    const flagCapitalize = flagname.charAt(0).toUpperCase() + flagname.slice(1).toLowerCase()
     for (let [key, value] of Object.entries(result)) {
         if (value === flagCapitalize) {
             const img = document.createElement("img");
